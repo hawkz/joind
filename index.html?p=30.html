@@ -307,12 +307,24 @@ input[type="submit"]:hover { background: #68bbe7; }
 
 		<p>Do get in touch. It would be good to hear from you.</p>
 <p>You can follow me on <a href="https://twitter.com/Jo_ind" target="_blank">Twitter</a> or find me on LinkedIn or  drop me a line in the form below.</p>
-<form id="search-mobile-bar" role="search" method="get" class="search-form" action="../index.html">
-	<label>
-		<span class="screen-reader-text">Search for:</span>
-		<input type="search" class="search-field" placeholder="Search" value="" name="s">
-	</label>
-	<input type="submit" class="search-submit" value="Search">
+<form
+  action="https://formspree.io/f/mvgpezvw"
+  method="POST"
+>
+  <label>
+	Your name:
+	<input type="text" name="name">
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
 </form>
 
 			</div><!-- .entry-content -->
